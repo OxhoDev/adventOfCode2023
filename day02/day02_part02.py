@@ -2,12 +2,8 @@ import re
 
 #file_name = '/home/rle/Documents/adventOfCode2023/day02/files/example.txt'
 file_name = '/home/rle/Documents/adventOfCode2023/day02/files/data.txt'
-
-
 result = 0
 #line = 'Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red'
-
-
 
 with open(file_name, 'r') as input_file:
     for line in input_file:
