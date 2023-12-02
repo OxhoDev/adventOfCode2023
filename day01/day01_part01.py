@@ -1,7 +1,7 @@
 import re
 
-#file_name = '/home/rle/Documents/adventOfCode2023/day01/example.txt'
-file_name = '/home/rle/Documents/adventOfCode2023/day01/data.txt'
+#file_name = '/home/rle/Documents/adventOfCode2023/day01/files/example.txt'
+file_name = '/home/rle/Documents/adventOfCode2023/day01/files/data.txt'
 result = 0
 
 # Exo 1

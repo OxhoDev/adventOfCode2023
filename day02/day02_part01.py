@@ -1,7 +1,7 @@
 import re
 
-#file_name = '/home/rle/Documents/adventOfCode2023/day02/example.txt'
-file_name = '/home/rle/Documents/adventOfCode2023/day02/data.txt'
+#file_name = '/home/rle/Documents/adventOfCode2023/day02/files/example.txt'
+file_name = '/home/rle/Documents/adventOfCode2023/day02/files/data.txt'
 
 mainConfig = {
     'red': 12,

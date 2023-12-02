@@ -1,5 +1,5 @@
-#file_name = '/home/rle/Documents/adventOfCode2023/day01/example.txt'
-file_name = '/home/rle/Documents/adventOfCode2023/day01/data.txt'
+#file_name = '/home/rle/Documents/adventOfCode2023/day01/files/example.txt'
+file_name = '/home/rle/Documents/adventOfCode2023/day01/files/data.txt'
 
 inLetter = ["zero","one","two","three","four","five","six","seven","eight","nine"]
 inDigit = ["0","1","2","3","4","5","6","7","8","9"]
