@@ -1,7 +1,7 @@
 import re
 
-file_name = '/home/rle/Documents/adventOfCode2023/day04/files/example.txt'
-#file_name = '/home/rle/Documents/adventOfCode2023/day04/files/data.txt'
+#file_name = '/home/rle/Documents/adventOfCode2023/day04/files/example.txt'
+file_name = '/home/rle/Documents/adventOfCode2023/day04/files/data.txt'
 result = 0
 
 ##DEF
@@ -24,15 +24,20 @@ def count_card_points (nMatch):
     return score
 '''
 
+lIndex = 0
 #MAIN
 with open(file_name, 'r') as input_file:
-    cardResult = [1] * len(input_file.readlines())
+    myLines = input_file.readlines()
+    cardResult = [1] * len(myLines)
+    print(cardResult)                     
 
-    for line in input_file.readlines():
+    for line in myLines:
         #print(line)
-        #splitResult = re.split(reSChar, line.strip())
-        splitResult = ['Card 1', ' 41 48 83 86 17 ', ' 83 86  6 31 17  9 48 53']
-        print(splitResult)
+        #print(lIndex)
+        #print(line)
+        splitResult = re.split(reSChar, line.strip())
+        #splitResult = ['Card 1', ' 41 48 83 86 17 ', ' 83 86  6 31 17  9 48 53']
+        #print(splitResult)
 
         ### SANDBOX
 
@@ -42,11 +47,12 @@ with open(file_name, 'r') as input_file:
         
         winNum = lotNum.intersection(playNum)
         nWinNum = len(winNum)
-
-        for n in range(1,nWinNum+1):
-            print(n)
-
+        if nWinNum != 0:
+            for n in range(1,nWinNum+1):
+                print(n)
+                cardResult[lIndex+n] += cardResult[lIndex]
         #cardScore = count_card_points(nWinNum)
-        #print(cardScore)
+        lIndex += 1
+        print(cardResult)
         
-print(result)
+print(sum(cardResult))
