@@ -5,8 +5,6 @@ file_name = '/home/rle/Documents/adventOfCode2023/day03/files/data.txt'
 result = 0
 
 # Exo 1
-
-result = 0
 partNumber = -42
 lastPartNumber = -42
 reSChar = "[^A-Za-z0-9\.]"
@@ -96,9 +94,9 @@ with open(file_name, 'r') as input_file:
     
     for numIndex in neighborsPos:
         partNumber = find_number(matrix,numIndex,reDigits)
-        #if int(partNumber) != int(lastPartNumber):
-        result += int(partNumber)
-        print(partNumber)
-        #lastPartNumber = int(partNumber)
+        if int(partNumber) != int(lastPartNumber):
+            result += int(partNumber)
+            print(partNumber)
+        lastPartNumber = int(partNumber)
 
 print(result)
